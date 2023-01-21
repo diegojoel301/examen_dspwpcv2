@@ -1,0 +1,14 @@
+FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
+
+RUN python3 -m pip install flask
+
+RUN pip install PyJWT
+
+WORKDIR /app
+
+COPY . /app
+
+ENV FLASK_APP=/app/app.py
+ENV FLASK_ENV=development
+
+CMD [ "flask", "run", "--host=0.0.0.0" ]
