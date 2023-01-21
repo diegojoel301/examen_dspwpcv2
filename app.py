@@ -55,7 +55,8 @@ def login():
             payload_data = {
                 'user': user,
                 'iat': now,
-                'exp': expires
+                'exp': expires,
+                'creds_xd': "admin:bsbGSVbhsgh7365sbnTSvgsbhd"
             }
 
             encode_jwt = jwt.encode(payload = payload_data, key = "DSPWPCv2_lab_1", algorithm="HS256")

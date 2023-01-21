@@ -3,8 +3,8 @@ import requests
 import sys
 
 data = {
-    "username": "admin",
-    "password": "bsbGSVbhsgh7365sbnTSvgsbhd"
+    "username": "alice",
+    "password": "jycbstygWTYW8262vn82636"
 }
 
 r = requests.post("http://{}:5000/login".format(sys.argv[1]), data = data, allow_redirects=False)
